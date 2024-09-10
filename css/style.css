@@ -1,0 +1,108 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+    color:white;
+    font-family: system-ui; 
+}
+.crud {
+    width:80%;
+    margin:auto;
+}
+/* start  header */
+.crud .head {
+    text-align:center;
+    margin:20px 0;
+    text-transform: uppercase;
+}
+.crud .head p {
+    margin-top: 3px;
+    font-size:18px;
+    font-weight: 500;
+}
+.crud .inputs title {
+    font-size:17px;
+}
+/* end  header */
+/* start inputs */
+.crud  input {
+    width:100%;
+    height:30px;
+    outline:none;
+    border:none;
+    border-radius:4px;
+    margin:5px 0;
+    padding:18px;
+    color:white;
+    background-color:#111;
+    font-size:16px;
+}
+.crud  input:focus {
+    background-color: #000;
+    transform:scale(1.1);
+}
+.crud .inputs .price {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.crud .inputs .price input { 
+   flex-basis:20%;
+}
+.crud .inputs .price #total {
+    background-color: #a00d02;
+    padding:5px 10px;
+    border-radius: 4px;
+    flex-basis:20%;
+}
+.crud .inputs .price #total::before {
+    content: "Total  :";
+}
+.crud button {
+    width:100%;
+    height:35px;
+    margin-top:5px;
+    cursor: pointer;
+    background-color: #390053;
+    color:#fff;
+    border:none;
+    outline: none;
+    border-radius:20px;
+    transition: 0.5s;
+}
+ button:hover {
+    background-color: #51025f;
+    letter-spacing:2px;
+}
+#create {
+    margin-bottom:5px;
+}
+/* end inputs */
+
+/* start outputs */
+.crud .outputs .searchBlock .btnsearch {
+  display:flex;
+  justify-content:space-between;
+  margin-top:5px;
+}
+.crud .outputs .searchBlock .btnsearch  button {
+    width: 45%;
+}
+.crud .outputs table {
+    width:100%;
+    text-align:center;
+    margin:30px 0;
+}
+.crud .outputs table th {
+    text-transform: uppercase;
+}
+.crud .outputs table th , .crud .outputs table td  {
+    padding:5px;
+}
+#deleteAll {
+   margin: 20px 0 ;
+}
+/* end outputs */
